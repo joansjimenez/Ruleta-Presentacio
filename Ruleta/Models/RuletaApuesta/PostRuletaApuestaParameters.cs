@@ -11,9 +11,7 @@ namespace Ruleta.Models.RuletaApuesta
         [Required]
         public int? CodigoApuesta { get; set; }
         [Required]
-        public int? NumeroID { get; set; }
-        [Required]
-        public int? ColorID { get; set; }
+        public int? Numero { get; set; }
         [Required]
         public float? Cantidad { get; set; }
         [Required]

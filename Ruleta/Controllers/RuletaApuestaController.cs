@@ -17,7 +17,7 @@ namespace Ruleta.Controllers
             {
                 CollectionResult<CRUD_RuletaApuesta_Result> service = CallService<CRUD_RuletaApuesta_Result>("RuletaApuesta/RuletaApuestaInsertar", data, delegate ()
                 {
-                    return db.CRUD_RuletaApuesta(data.CodigoApuesta, data.NumeroID, data.ColorID, data.Cantidad, data.UsuarioID);
+                    return db.CRUD_RuletaApuesta(data.CodigoApuesta, data.Numero, data.Cantidad, data.UsuarioID);
                 });
 
                 if (service.result == ServiceResult.Success)
